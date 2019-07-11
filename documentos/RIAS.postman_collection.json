@@ -1,0 +1,147 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RIAS",
+		"_postman_id": "6e97129c-1a46-3d04-7bd5-10228f9cba3e",
+		"description": "Rias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Files",
+			"request": {
+				"url": "http://localhost:8080/rias/drive/files",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ya29.GlvBBZGql3Rf9uZdjI5hObGjgsmgryomfaNE_Wi7w3dPfyNKrsdvqbtkWLaBD48j4YeEj0onZ6ZvKtZLZRPs2FydvzJQXzBNZbNe8idCtX6an1roDlj7lWetuaZO",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get File",
+			"request": {
+				"url": "http://localhost:8080/rias/drive/files/1I2jYqyWiNkdZhdjcVudfTLQ7wJqdN4Xs",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Athorization",
+						"value": "Bearer ya29.GlvBBZGql3Rf9uZdjI5hObGjgsmgryomfaNE_Wi7w3dPfyNKrsdvqbtkWLaBD48j4YeEj0onZ6ZvKtZLZRPs2FydvzJQXzBNZbNe8idCtX6an1roDlj7lWetuaZO",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Folders",
+			"request": {
+				"url": {
+					"raw": "https://www.googleapis.com/drive/v3/files?pageSize=10&pageToken=~!!~AI9FV7TUa8rzgkDXdtHR_S1rKX2fo7N1_XSLXkUcMpY0PNjTLmVr8SNEi4wr6VtZ8fgluZ9Zl_UEUtMRhnJ7SYvUkjp5sgQseM0jG8VCU5VzczIPu42ZW1I3irI3XYeR-qwEkTWm0MgJGQhyOi5T1deXm23UVC43u-2gyo8VUNejbtzyCrOvp-zyrI_oHJBCyQLHID1GPBdPl5xmFzIV4X0Do0n_GTAYjtRAibK4eBxeAoG5DgQ0ylBJcKON8Z3Q6bYCKavh4_DUamnECWnogzIcIjSXAkQUYPCYJ7vo8X13Kwig2DG48C5P1dp2dQlq2Np_BeE_DbofEcTOHqq4YeOoiBoaDJa2NZ5IG7dpQm6mw3rHtlmupNGeQYSBy9esqv9376-3nLty",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"drive",
+						"v3",
+						"files"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageToken",
+							"value": "~!!~AI9FV7TUa8rzgkDXdtHR_S1rKX2fo7N1_XSLXkUcMpY0PNjTLmVr8SNEi4wr6VtZ8fgluZ9Zl_UEUtMRhnJ7SYvUkjp5sgQseM0jG8VCU5VzczIPu42ZW1I3irI3XYeR-qwEkTWm0MgJGQhyOi5T1deXm23UVC43u-2gyo8VUNejbtzyCrOvp-zyrI_oHJBCyQLHID1GPBdPl5xmFzIV4X0Do0n_GTAYjtRAibK4eBxeAoG5DgQ0ylBJcKON8Z3Q6bYCKavh4_DUamnECWnogzIcIjSXAkQUYPCYJ7vo8X13Kwig2DG48C5P1dp2dQlq2Np_BeE_DbofEcTOHqq4YeOoiBoaDJa2NZ5IG7dpQm6mw3rHtlmupNGeQYSBy9esqv9376-3nLty",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ya29.GlvCBd72klhhyBl-9PFT35D0daUBhVbR6UbIfq4Lj1NJ45K3F9OGXQkICmQGtQbC2Xxg089s4TY4ZR6DYY1vfmnOA-c_N7BslVfIeUnbdxi4MEABKjjhpuz6pEek",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all folders",
+			"request": {
+				"url": "http://localhost:8080/rias/drive/folders",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ya29.GlvKBWzPPKENJAF9Cj3-g_4Qh_BIn6Sk2v__c0ilOQADtr_Sw7IZyr-v7nQxzUkmbSd0wPYRFC4f7CDPchnsj8dwKE8zvbcmQ-UuKLewDUyd1P-gq2ySdW5AzkFT",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search folders by term",
+			"request": {
+				"url": "http://localhost:8080/rias/drive/folders/search/Tecnologo",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ya29.GlvKBWzPPKENJAF9Cj3-g_4Qh_BIn6Sk2v__c0ilOQADtr_Sw7IZyr-v7nQxzUkmbSd0wPYRFC4f7CDPchnsj8dwKE8zvbcmQ-UuKLewDUyd1P-gq2ySdW5AzkFT",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get subfolders by google file id",
+			"request": {
+				"url": "http://localhost:8080/rias/drive/folders/0B3hwcPh2bn5fSzItLVRLWjVvV1k",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ya29.GlvKBWzPPKENJAF9Cj3-g_4Qh_BIn6Sk2v__c0ilOQADtr_Sw7IZyr-v7nQxzUkmbSd0wPYRFC4f7CDPchnsj8dwKE8zvbcmQ-UuKLewDUyd1P-gq2ySdW5AzkFT",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
